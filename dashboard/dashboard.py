@@ -104,7 +104,7 @@ max_date = all_data["order_approved_at"].max()
 # Sidebar
 with st.sidebar:
     #Menambahkan logo
-    st.image("logo.png")
+    st.image("https://raw.githubusercontent.com/Fatikhaaa/submission-analisis-data-ecommerce/refs/heads/main/dashboard/logo.png")
 
     # Mengambil start_date dan end_date  dai date_input
     start_date, end_date = st.date_input(
