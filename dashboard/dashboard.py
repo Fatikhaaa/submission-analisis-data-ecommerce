@@ -89,6 +89,7 @@ def create_rfm_df(df):
 
 # Load Dataset
 datetime_columns = ["order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date", "order_purchase_timestamp", "shipping_limit_date"]
+script_dir = os.path.dirname(os.path.realpath(__file__))
 all_data = pd.read_csv(f"{script_dir}/all_data.csv")
 all_data.sort_values(by="order_approved_at", inplace=True)
 all_data.reset_index(inplace=True)
